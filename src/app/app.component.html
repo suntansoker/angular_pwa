@@ -1,0 +1,7 @@
+<div>
+ <h1 id="head_title">Demonstration of passing data between components, styles demo(with PWA)</h1>
+ <p *ngIf="showDetails" id="recent">Recently added product:
+    {{new_added[0]}},{{new_added[1]}}</p> 
+ <hr/>
+  <prod-component [emptable]='prod' (addedNameQuantityEvent)='printAdded($event)'></prod-component>
+</div> 
